@@ -64,10 +64,10 @@ class hparams:
 	sch = True
 	sch_step = 4000
 	max_iter = 1e6
-	batch_size = 40
-	iters_per_log = 50
-	iters_per_sample = 500
-	iters_per_ckpt = 1000
+	batch_size = 20
+	iters_per_log = 10
+	iters_per_sample = 100000
+	iters_per_ckpt = 800
 	weight_decay = 1e-6
 	grad_clip_thresh = 1.0
 	mask_padding = True

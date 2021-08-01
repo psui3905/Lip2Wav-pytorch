@@ -149,9 +149,9 @@ def infer_vid(inputs, model, mode='train'):
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-d', "--data_dir", help="Speaker folder path", required=True)
-	parser.add_argument('-r', "--results_dir", help="Speaker folder path", required=True)
-	parser.add_argument('--checkpoint', help="Path to trained checkpoint", required=True)
+	parser.add_argument('-d', "--data_dir", dest='data_root', help="Speaker folder path", required=True)
+	parser.add_argument('-r', "--results_dir", dest='results_root', help="Speaker folder path", required=True)
+	parser.add_argument('--checkpoint', dest='checkpoint', help="Path to trained checkpoint", required=True)
 	parser.add_argument("--preset", help="Speaker-specific hyper-params", type=str, required=False)
 	args = parser.parse_args()
 
